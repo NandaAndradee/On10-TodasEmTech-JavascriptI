@@ -1,7 +1,47 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color: #081c15;
+}
+
 body{
     background-color: #52b788;
-    margin: 10rem 5rem;
+    margin: 0 auto;
+    display: table;
+    width: 50%;
 }
-.container-imagem{
-   
+
+.biblioteca{
+    text-align:justify;
+    
+}
+
+#titulo{
+    width: 50%;
+}
+
+#autor{
+    width: 50%;
+}
+
+#isbn{
+    width: 50%;
+}
+
+#pages{
+    width: 20%;
+}
+
+
+
+
+
+
+.tabela{
+    background-color:#74c69d;
+    border-style: double;
+    border-radius: 0.2rem;
+    border-color: #74c69d;
+    padding: 0.5rem;
+    margin: 1rem;
 }

@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <div class="container-imagem"></div>
+<div class="biblioteca">
+    <h1>Biblioteca</h1>
+</div>
     <form onsubmit="criarTabela(event)">
-        <h1>Biblioteca</h1>
             <p>
                 <label for="titulo">Título</label>
                 <input type="text" id="titulo"> 
@@ -35,23 +36,25 @@
             <input type="submit">
         </div>
     </form>
-    <table>
+<div class="tabela-geral">
+    <table class="tabela">
         <thead>
             <tr>
                 <th>Título</th>
                 <th>Autor</th>
                 <th>ISBN</th>
                 <th>Data de Publicação</th>
-                <th>Pagina</th>
+                <th>Pagina</th>                   
                 <th>Data de Inserção</th>
             </tr>
-            
+                
         </thead>
         <tbody id="corpoTabela">
-            
+                
         </tbody>
     </table>
-
+</div>
+    
 
     <script src="./script/script.js"></script>
 </body>
