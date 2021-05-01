@@ -2,46 +2,108 @@
     box-sizing: border-box;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     color: #081c15;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    background-color: #52b788;
+    background-color: gray;
+    transition: .5s;
     margin: 0 auto;
-    display: table;
-    width: 50%;
+    width: 100%;
+}
+.header-img{
+    width: 100%;
+}
+.header-titulo{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
 }
 
-.biblioteca{
-    text-align:justify;
-    
+.section-formulario{
+    margin: auto;
+    display: block;
+    width: 18rem;
+    margin-bottom: 2rem;
 }
 
-#titulo{
-    width: 50%;
-}
-
-#autor{
-    width: 50%;
-}
-
-#isbn{
-    width: 50%;
-}
-
-#pages{
-    width: 20%;
+.section-tabela{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
 }
 
 
-
-
-
+.caixa-formulario{
+    font-size: 1.2rem;
+}
+.botao-formulario{
+    font-size: 1.2rem;
+}
 
 .tabela{
-    background-color:#74c69d;
+    background-color:#CED4DA;
     border-style: double;
     border-radius: 0.2rem;
-    border-color: #74c69d;
+    border-color: #ADB5BD;
     padding: 0.5rem;
     margin: 1rem;
+    font-size: 0.60rem;
 }
+#corpo-tabela{
+    font-size: 12px;
+}
+
+hr{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);  
+}
+
+.botao-tab{
+    width: 12px;
+    height: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../style/img/exclusão.png);
+    border-style: none;
+    border-radius: 2px;
+    background-color: lightgray;
+}
+
+@media (min-width: 768px) {
+    .header{
+        height: 100px;
+    }
+    .section-formulario{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .section-tabela{
+        margin-left: 60px;
+        margin-right: 60px; 
+    }
+    .tabela{
+        margin: 0 auto;
+    }
+    th{
+        font-size: 15px;
+        padding: 13px;
+    }
+    
+    td{
+        font-size: 12px;
+    }
+    .botao-tabela{
+        width: 25px;
+        height: 25px;
+    }
+  }
+

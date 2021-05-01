@@ -8,18 +8,26 @@ function criarTabela(event) {
     let dataInsercao = new Date().toLocaleDateString('pt-br');
     let horarioInsercao = new Date().toLocaleTimeString('pt-br');
 
-    document.getElementById('corpoTabela').innerHTML += `
-        <tr>
-            <td>${pegaTitulo}</td>
-            <td>${pegaAutor}</td>
-            <td>${pegaISBN}</td>
-            <td>${pegaDataPublicacao}</td>
-            <td>${pegaPagina}</td>
-            <td>${dataInsercao}, ${horarioInsercao}</td>
-        </tr>
+    if (pegaTitulo==="" || pegaAutor==="" || pegaISBN==="" || pegaDataPublicacao==="" || pegaPagina==="" ) {
+        alert("Preencha completamente todos os dados")
+    } else {
+        document.getElementById('corpoTabela').innerHTML += `
+            <tr id="tr-tabela">
+                <td>${pegaTitulo}</td>
+                <td>${pegaAutor}</td>
+                <td>${pegaISBN}</td>
+                <td>${pegaDataPublicacao}</td>
+                <td>${pegaPagina}</td>
+                <td>${dataInsercao}, ${horarioInsercao}</td>
+                <td><button id="botao-tab" class="botao-tab" onclick="botaoRemover(event)"></button></td>
+            </tr>
+        ` 
+    }
 
-    `
+}
 
+function botaoRemover(event) {
+    document.getElementById("tr-tabela").remove();
 }
 
 
